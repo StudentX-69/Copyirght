@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+    background-color: rgb(231, 231, 232);
+} 
+*/
+.logo img{
+    position: absolute;
+    top: 5%;
+    left: 1%;
+    background-color: white;
+    border-radius: 20%;
+}
+h2{
+    font-size: 23px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+   position: absolute;
+   top: 7%;
+   left: 6%;
+}
+.highlight{
+    color: #747474e3;
+}
+a{
+    text-decoration: none;
+     color: #5d5d5d;
+     padding: 10px;
+     display: inline;
+     justify-content:flex-start;
+     align-items: center;
+     padding: 25px;
+     font-family: 'Montserrat';
+     font-weight: 400;
+}
+.dropdown-link{
+    font-size: small;
+    font-weight: 500;
+}
+.dropdown-link:hover{
+    color: black;
+    text-decoration: underline;
+}
+.dropdown-content ,a:hover{
+        top: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+        text-decoration: none;
+} 
+div{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+
+}
+
+.designer{
+    padding: 8px;
+    border-radius: 30px;
+    background-color: #f9eb2d;
+    border: none;
+    font-family: 'Montserrat';
+    cursor: pointer;
+    font-weight: 500;
+}
+
+h1{
+    color: #747474e3;
+    font-family: 'roboto';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+    font-size:8vh;
+    font-weight: 600;
+     
+}
+
+
+.h1{
+    position: relative;
+    top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: absolute;
+    top: 5%;
+    right: 0;
+    width: 100%;
+}
+.dropbtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    font-family: 'Montserrat';
+    box-shadow: 0 15px 6px -6px rgba(21, 21, 21, 0.269);
+    margin-right: 24px;
+    top: 0;
+    font-size: 16px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+   
+}
+.material-symbols-outlined{
+    font-size: 24px;
+    vertical-align: middle;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+h5{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 50px; */
+    color: #747474ec;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.join{
+  margin-left:45% ;
+  border: none;
+  padding: 8px;   
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  font-family: "Montserrat";
+  cursor: pointer;
+  margin-bottom: 10px;
+  box-shadow: 0 15px 6px -6px rgba(0, 0, 0, 0.269);
+  
+}
+
+.hire{
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid rgba(155, 154, 154, 0.694);
+    border-radius: 13px;
+    font-family: "Montserrat";
+    cursor: pointer;
+}
+.join:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid rgba(155, 154, 154, 0.694);
+}
+
+.hire:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid rgba(155, 154, 154, 0.694);
+}
+/* Gallery / Baseline Cards */
+         .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end; 
+            gap: 10px;
+            padding: 20px;
+            width: 100%;
+            margin-top: auto; 
+          
+        }  
+
+        .card-container img{
+             border-radius: 15px;
+             height: 230px;
+             width: 220px;
+              transition:transform 0.3s ease-out ;
+              margin-bottom: 20%;
+              object-fit: cover;
+        }
+
+        .card-container img:hover{
+            transform: scale(1.15);
+            width: 260px;
+            height: 260px;
+           
+        }
+
+      
+
+        @media (max-width: 768px) {
+            h1, .h1 { font-size: 4vh; }
+            .join { margin-left: auto; margin-right: auto; display: block; }
+            .hire { margin: 10px auto; display: block; }
+        }
