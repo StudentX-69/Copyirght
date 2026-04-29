@@ -1,14 +1,22 @@
 function Switchbutton() {
     // Get all designer buttons
-    const buttons = document.querySelectorAll('.designer');
+    const buttons = document.querySelectorAll('.designer, .designer1');
     buttons.forEach((btn) => {
         // Toggle color and text based on current state
         if (btn.innerText === 'Something new') {
             btn.innerText = 'Designer';
             btn.style.backgroundColor = '#f9eb2d';
             btn.style.color = 'black';
-        } else {
+        } else if (btn.innerText === 'Designer') {
             btn.innerText = 'Something new';
+            btn.style.backgroundColor = 'white';
+            btn.style.color = '#5d5d5dd4';
+        } else if (btn.innerText === 'Designer') {
+            btn.innerText = 'Something new';
+            btn.style.backgroundColor = '#f9eb2d';
+            btn.style.color = 'black';
+        } else {
+            btn.innerText = 'Designer';
             btn.style.backgroundColor = 'white';
             btn.style.color = '#5d5d5dd4';
         }
@@ -23,4 +31,12 @@ function Drop() {
 function select() {
     const dropdown = document.querySelector('.dropdown-link');
     dropdown.style.textDecoration === 'underline';
+}
+ 
+function hire() {
+    window.location.href = "mailto:nabhay114@gmail.com";
+ }
+
+function join() {
+    window.location.href = "https://x.com/Abhaynirmalkar1";
 }

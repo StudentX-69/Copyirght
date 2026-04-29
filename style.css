@@ -6,58 +6,59 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* body{
-    background-color: rgb(231, 231, 232);
+ body{
+    background-color: rgb(253, 253, 254);
 } 
-*/
-.logo img{
-    position: absolute;
-    top: 5%;
-    left: 1%;
-    background-color: white;
-    border-radius: 20%;
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 30px;
+    position: relative;
 }
-h2{
+
+.logo img {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    border-radius: 20%;
+    background-color: white;
+}
+
+h2 {
+    position: absolute;
+    left: 110px;
+    top: 30px;
     font-size: 23px;
     font-weight: 600;
     font-family: 'Montserrat';
-   position: absolute;
-   top: 7%;
-   left: 6%;
 }
-.highlight{
+.highlight {
     color: #747474e3;
 }
-a{
+
+.dropdown-link {
     text-decoration: none;
-     color: #5d5d5d;
-     padding: 10px;
-     display: inline;
-     justify-content:flex-start;
-     align-items: center;
-     padding: 25px;
-     font-family: 'Montserrat';
-     font-weight: 400;
-}
-.dropdown-link{
-    font-size: small;
+    color: #5d5d5d;
+    font-family: 'Montserrat';
+    font-size: 20px;
     font-weight: 500;
+    padding: 10px 0 10px;
 }
-.dropdown-link:hover{
+
+.dropdown-link:hover {
     color: black;
     text-decoration: underline;
 }
+
 .dropdown-content ,a:hover{
         top: 100%;
         flex-direction: column;
         align-items: flex-end;
         text-decoration: none;
 } 
-div{
-    display: flex;
-    justify-content: center;
-    
-}
 
 .option{
     display: flex;
@@ -76,7 +77,15 @@ div{
     cursor: pointer;
     font-weight: 500;
 }
-
+.designer1{
+     padding: 8px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: none;
+    font-family: 'Montserrat';
+    cursor: pointer;
+    font-weight: 500;
+}
 h1{
     color: #747474e3;
     font-family: 'roboto';
@@ -89,8 +98,6 @@ h1{
     font-weight: 600;
      
 }
-
-
 .h1{
     position: relative;
     top: -10px;
@@ -157,7 +164,7 @@ h5{
 .join{
   margin-left:45% ;
   border: none;
-  padding: 8px;   
+  padding: 8px ;   
   background-color: black;
   color: white;
   border-radius: 12px;
@@ -191,6 +198,7 @@ h5{
 }
 /* Gallery / Baseline Cards */
          .card-container {
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: flex-end; 
@@ -216,6 +224,26 @@ h5{
             height: 260px;
            
         }
+       
+        .card1{
+            position: relative;
+            overflow: hidden;
+        }
+        .card-container .card1 p{
+            position: absolute;
+            bottom: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            font-family: 'Montserrat';
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.3s ease-out;
+        }
+        .card1:hover p{
+            opacity: 1;
+        }
 
       
 
@@ -223,4 +251,14 @@ h5{
             h1, .h1 { font-size: 4vh; }
             .join { margin-left: auto; margin-right: auto; display: block; }
             .hire { margin: 10px auto; display: block; }
+            .logo img{
+                height: 30px;
+                width: 30px;
+            }
+            .port{
+                font-size: 10px;
+                margin-left: -60px;
+                margin-top: -10px;
+            }
+            
         }
